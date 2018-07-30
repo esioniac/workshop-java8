@@ -22,10 +22,7 @@ public class Method_02_Test {
         // TODO la méthode retourne une chaîne de la forme [<nb_personnes> persons]
         // TODO exemple de résultat : "[14 persons]", "[30 persons]"
         default String format() {
-        	int sum = 0;
-        	for (Person p : findAll()) {
-        		sum++;
-        	}
+        	int sum = findAll().size();
         	return "[" + sum + " persons]";
         }
     }
